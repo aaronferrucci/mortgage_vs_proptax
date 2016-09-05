@@ -71,6 +71,13 @@ ui <- shinyUI(fluidPage(
          checkboxInput("do_deduct", "Adjust For Deductions", value = FALSE),
          numericInput("income_tax", "Income Tax Rate", value=0.3, min=0, step=0.05)
       )
+   ),
+   fluidRow(
+     hr(),
+     column(12, 
+            h5(a("Source code, github", href="https://github.com/aaronferrucci/mortgage_vs_proptax")),
+            h5("mortgage function adapted from ", a("http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/mortgage.R", href="http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/mortgage.R"))
+     )
    )
 ))
 
